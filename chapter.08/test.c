@@ -12,24 +12,32 @@ int main()
 #endif
 
 #if 0
+#include <stdio.h>
 int main()
 {
 	char *p = "hello";
 	char *q = "hello";
-	*p = 'a'; // error
+	printf("p=%p\n", p);
+	printf("q=%p\n", q);
+	//*p = 'a'; // runtime error
 	p = "world";
+	printf("p=%p\n", p);
+	printf("q=%p\n", q);
 
 	return 0;
 }
 #endif
 
 #if 0
+#include <stdio.h>
 int main()
 {
 	char a[] = "hello";
 	char *q = "hello";
+	printf("a=%s\n", a );
 	*a = 'a'; 
-	a = "world"; // error
+	printf("a=%s\n", a );
+	a = "world"; // compile error
 
 	return 0;
 }

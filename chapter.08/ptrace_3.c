@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%08x\n", data);
 	}
-	ptrace(PTRACE_POKEDATA, pid, 0x7ffe190ff240, 0x41414141);
+	ptrace(PTRACE_POKEDATA, pid, 0x7ffcdd70d240 , 0x41414141);
 	ptrace(PTRACE_DETACH, pid, 0, 0);
 }
 

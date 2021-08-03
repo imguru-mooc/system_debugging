@@ -13,6 +13,7 @@ void *foo(void *data)
 	{
 		printf("[%s]\n", p );
 		p = strtok( 0 , sep );
+		sleep(1);
 	}
 	return 0;
 }
@@ -26,6 +27,7 @@ void *bar(void *data)
 	{
 		printf("[%s]\n", p );
 		p = strtok( 0 , sep );
+		sleep(1);
 	}
 	return 0;
 }

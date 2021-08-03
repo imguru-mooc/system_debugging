@@ -3,25 +3,14 @@
 #include <unistd.h>
 int main()
 {
+	int i;
 	char str[] = "hello!";
-	while(1)
+	for(i=0; ;i++)
 	{
-		printf("%s\n", str);
+		printf("%d : %s\n", i, str);
 		sleep(1);
 	}
 }
 #endif
 
-#if 0
-#include <stdio.h>
-#include <unistd.h>
-int main()
-{
-	while(1)
-	{
-		printf("hello!\n");
-		sleep(1);
-	}
-}
-#endif
 
