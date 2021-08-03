@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <unistd.h>
 
 int a(void);
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
 	if (argc > 1)
 		ret = atoi(argv[1]);
 
+	printf("%d\n", getpid());
 	ret += a();
 	return ret ? 0 : 1;
 }
